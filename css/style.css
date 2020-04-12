@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+body{
+	font: 700 18px/1.5 'Quicksand', sans-serif;
+	letter-spacing: 0.05em;
+	color: #fff;
+	height: 100vh;
+}
+
+a{
+text-decoration: none;
+}
+
+/* Layout */
+.ba-container{
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+		display: inline-block;
+		border: none;
+		background: #23AE92;
+		font-weight: 700;
+		font-size: 20px;
+		color: #fff;
+		padding: 8px;
+		border: 2px solid #23AE92;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	border: 2px solid #AF8FCC;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	border: 2px solid #23ae92;
+	outline: none;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="tel"]:hover,
+textarea:hover,
+select:hover {
+	border: 2px solid #fff;
+	outline: none;
+}
+
+textarea {
+
+}
+
+.ba-main-form {
+	background: #A16FCF;
+	max-width: 400px;
+	background: url(/12/sign-in-form/img/body3.png), linear-gradient( 35deg, #3023ae 40%, #c86dd7 100%);
+	background-repeat: no-repeat;
+	background-position: right;
+   background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+	padding: 50px 70px;
+	-webkit-box-shadow: 0px 54px 48px -21px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0px 54px 48px -21px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 54px 48px -21px rgba(0, 0, 0, 0.8);
+	 }
+	
+
+ .sign-in {
+	color: #fff;
+	position: relative;
+}
+
+.sign-in:after{
+	content: '';
+	left: 0;
+	width: 100%;
+	position: absolute;
+	top: 24px;
+	border-bottom: 3px solid #E66A64;
+}
+
+.join-us{
+	 color: #E1C2F1;
+	 margin-left: 25px;
+}
+
+input[name="username"],
+input[name="password"]{
+	background-color: transparent;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.ba-form-header{
+	margin-bottom: 50px;
+}
+.ba-full-width{
+	width: 100%;
+}
+
+input[name="keepme"]{
+	margin-bottom: 40px;
+}
+
+.ba-form-footer-link{
+	font: 400 13px/1.5 'Quicksand', sans-serif;
+	color: rgba(255, 255, 255, 0.5);
+	position: relative;
+}
+
+.ba-form-footer-link:after{
+	content: '';
+	left: 0;
+	width: 100%;
+	position: absolute;
+	top: 16px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.ba-full-width {
+	margin-bottom: 35px;
+}
+.ba-form-footer-link-create{
+	margin-left: 10px;
+}
+
+.join-us:hover {
+	color: #fff;
+	padding-bottom: 2px;
+	border-bottom: 2px solid #E66A64;
+}
+
+.ba-sign-in-button:hover {
+	border: 2px solid #fff;
+	background: transparent;
+	color: #23AE92;
+}
+
+.ba-form-footer-link:hover{
+	color: #fff;
+	border-bottom: 1px solid #fff;
+
+}
+
+.ba-absolute-center{
+	display: flex;
+	align-items: center;
+   justify-content: center;
+}
+
+[id=keep-me-signed-in] {
+	display: none;
+}
+
+
+.ba-main-content {
+	position: relative;
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+
+.ba-main-content-samll-text{
+	font-size: 13px;
+	margin-left: 25px;
+}
+
+ .ba-main-content-samll-text:before {
+	content: '';
+    position: absolute;
+	 left: 0px;
+	 bottom: 5px;
+    height: 15px;
+    width: 15px;
+    background: #23ae92;
+    cursor: pointer;
+}
+
+[id=keep-me-signed-in]:checked ~ label::after{
+	content: '\2713';
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	color: #fff;
+}
